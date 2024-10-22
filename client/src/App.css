@@ -1,0 +1,235 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #000;
+}
+
+.project {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Add to src/App.css */
+.project-images {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.project-image {
+  max-width: 100%; /* Responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 5px; /* Space between images */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+
+.project h3 {
+  margin: 0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px; /* Add margin above links */
+  text-decoration: none;
+  color: #007bff; /* Bootstrap primary color */
+} 
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f9f9f9 25%, #e3e3e3 100%);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #225f7e;
+  margin-bottom: 20px;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.project {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.resume-section a {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-section a:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  background-color: #34495e;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}   
+/* App.css */
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* About Section */
+.about-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 20px;
+}
+
+.project {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project-images {
+  display: flex;
+  gap: 10px;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-image: url('./assets/background-image.png'); /* Adjust the path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p{
+  background-color: #000;
+}

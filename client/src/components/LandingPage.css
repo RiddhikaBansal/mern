@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0e9e9;
+}
+
+/* General text color outside the hobbies section */
+body, p, h1, h2, h3, h4, h5, h6 {
+  color: #333333; /* Darker text color for readability */
+}
+
+.landing-container {
+  height: 100vh;
+  background-image: url('/src/assets/background-image.png'); /* Add your background image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white; /* Default navigation text color */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f4f6f7; /* A nice hover effect color */
+}
+
+/* Intro text section */
+.intro-text {
+  position: relative;
+  top: 30%;
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #222222; /* Change the heading color */
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 600px;
+  color: #666666; /* Change paragraph text color */
+}
+
+/* Hobbies section - text color stays the same */
+.hobbies-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #dec340; /* Background color for hobbies section */
+}
+
+.hobbies-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0c0b0b; /* Dark color for heading */
+}
+
+.hobbies-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Wrap images on smaller screens */
+}
+
+.hobby {
+  width: 250px; /* Width of each hobby image */
+  transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.hobby img {
+  width: 100%; /* Ensure images are responsive */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.hobby:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.landing-page p {
+  background-color: #e9e4e4;
+  color: #333333; /* Change text color for landing page paragraphs */
+}
