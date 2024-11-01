@@ -1,5 +1,7 @@
 import React from 'react';
 import './LandingPage.css';
+import GuitarImage from '../assets/guitar.png';
+import SongsImage from '../assets/songs.png';
 
 const LandingPage = () => {
   return (
@@ -10,32 +12,25 @@ const LandingPage = () => {
         Explore my work and feel free to reach out!
       </p>
 
-      <div>
       <h3 className="skills">Skills</h3>
-      <p>
-                  Programming Languages: Python, C, C++</p>
-                  <p>Web Technologies: React, Node.js, HTML, CSS</p>
-                  <p>IoT Tools: Arduino, ESP8266, Blynk</p>
-                  <p>Networking: Cisco configuration, DHCP server setup</p>
-                  
-                  </div>
+      <p>Programming Languages: Python, C, C++</p>
+      <p>Web Technologies: React, Node.js, HTML, CSS</p>
+      <p>IoT Tools: Arduino, ESP8266, Blynk</p>
+      <p>Networking: Cisco configuration, DHCP server setup</p>
 
-      
-                  
-<section className="hobbies-section">
-  <h2>My Hobbies</h2>
-  <div className="hobbies-container">
-    <div className="hobby">
-      <img src="src/assets/guitar.png" alt="Guitar" />
-      <p>Guitar</p>
-    </div>
-    <div className="hobby">
-      <img src="src/assets/songs.png" alt="Songs" />
-      <p>Songs</p>
-    </div>
-  </div>
-</section>
-      
+      <section className="hobbies-section">
+        <h2>My Hobbies</h2>
+        <div className="hobbies-container">
+          <div className="hobby">
+            <img src={GuitarImage} alt="Guitar" />
+            <p>Guitar</p>
+          </div>
+          <div className="hobby">
+            <img src={SongsImage} alt="Songs" />
+            <p>Singing</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
