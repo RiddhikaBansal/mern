@@ -1,15 +1,18 @@
+// Signup.js
 import React, { useState } from 'react';
 import './Auth.css';
+import Notification from './Notification';
 
-function Signup() {
+function Signup({ setNotification }) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle signup logic (e.g., API call)
+        // Simulate signup logic (e.g., API call)
         console.log('Signup Submitted:', { name, email, password });
+        setNotification(`User ${name} signed up successfully.`);
     };
 
     return (
