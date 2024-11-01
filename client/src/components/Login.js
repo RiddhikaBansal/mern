@@ -1,14 +1,17 @@
+// Login.js
 import React, { useState } from 'react';
 import './Auth.css';
+import Notification from './Notification';
 
-function Login() {
+function Login({ setNotification }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle login logic (e.g., API call)
+        // Simulate login logic (e.g., API call)
         console.log('Login Submitted:', { email, password });
+        setNotification(`User with email ${email} logged in successfully.`);
     };
 
     return (
