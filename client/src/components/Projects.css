@@ -1,0 +1,84 @@
+/* Projects.css */
+
+#projects {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between project cards */
+    justify-content: center; /* Centers all project cards */
+}
+
+.project {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 40px); /* Allows for up to 3 cards per row */
+    min-width: 280px; /* Ensures a minimum width for each project card */
+    max-width: 350px; /* Restricts card width for consistent sizing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.project p {
+    color: #555;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Images Container and Styling */
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between images */
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.project-image {
+    max-width: 60px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* GitHub Link Styling */
+.project a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto; /* Aligns link at the bottom */
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #1d6fa5;
+    text-decoration: underline;
+}
