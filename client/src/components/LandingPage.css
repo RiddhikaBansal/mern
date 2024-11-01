@@ -1,36 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0e9e9;
-}
-
-/* General text color outside the hobbies section */
-body, p, h1, h2, h3, h4, h5, h6 {
-  color: #333333; /* Darker text color for readability */
+  background-color: #f3f4f6;
+  
 }
 
 .landing-container {
   height: 100vh;
-  background-image: url('/src/assets/background-image.png'); /* Add your background image path */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/src/assets/background-image.png');
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  color: white;
+  
 }
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  position: relative;
+  color: #ffffff;
 }
 
 .logo {
@@ -39,81 +29,79 @@ header {
   color: #ffffff;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
 nav ul li a {
-  color: white; /* Default navigation text color */
+  color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #f4f6f7; /* A nice hover effect color */
-}
-
-/* Intro text section */
-.intro-text {
-  position: relative;
-  top: 30%;
+  color: #ffd700;
 }
 
 .intro-text h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #222222; /* Change the heading color */
+  color: #f4f6f7;
 }
 
 .intro-text p {
   font-size: 1.2rem;
-  margin: 0 auto;
-  max-width: 600px;
-  color: #666666; /* Change paragraph text color */
+  color: #cccccc;
 }
 
-/* Hobbies section - text color stays the same */
+/* Hobbies Section */
 .hobbies-section {
   padding: 50px 20px;
   text-align: center;
-  background-color: #dec340; /* Background color for hobbies section */
+  
 }
 
 .hobbies-section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #0c0b0b; /* Dark color for heading */
+  color: #333;
 }
 
+/* Hobby Container */
 .hobbies-container {
   display: flex;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap; /* Wrap images on smaller screens */
+  flex-wrap: wrap;
 }
 
 .hobby {
-  width: 250px; /* Width of each hobby image */
-  transition: transform 0.3s; /* Smooth scaling on hover */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
 }
 
+/* Image Styling */
 .hobby img {
-  width: 100%; /* Ensure images are responsive */
-  border-radius: 10px; /* Rounded corners */
+  width: 100%;
+  max-width: 150px; /* Keep images at a consistent size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
+.hobby p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Hover Effects */
 .hobby:hover {
-  transform: scale(1.05); /* Scale effect on hover */
+  transform: scale(1.05);
 }
 
-.landing-page p {
-  background-color: #e9e4e4;
-  color: #333333; /* Change text color for landing page paragraphs */
+.hobby img:hover {
+  transform: scale(1.1);
 }
